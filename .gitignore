@@ -8,3 +8,7 @@ firmware/core/Release
 firmware/core/Debug
 hardware/Prototype/Prototype.sch-bak
 hardware/Prototype/Prototype.kicad_pcb-bak
+
+# Rippel UI
+ui/node_modules
+ui/build

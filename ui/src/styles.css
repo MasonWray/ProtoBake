@@ -1,0 +1,254 @@
+/* 240x320 portrait. Colors follow the prototype's Theme.h. */
+
+.app {
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  color: #f2f2f2;
+}
+
+.screen {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Header */
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-name {
+  font-size: 16px;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.heater {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background: #3a3a3a;
+}
+
+.heater:checked {
+  background: #ff5a1f;
+}
+
+.status-text {
+  font-size: 14px;
+}
+
+.status-ok {
+  color: #9aa0a6;
+}
+
+.status-fault {
+  color: #ff4d4f;
+}
+
+/* Chart: 52 columns at a 4px pitch fill the 208px inside the padding. */
+
+.chart {
+  width: 100%;
+  height: 116px;
+  padding: 6px;
+  background: #1c1c1c;
+  border: 1px solid #3a3a3a;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.chart-target {
+  width: 3px;
+  background: #0e4a5c;
+}
+
+.chart-live {
+  width: 3px;
+  margin-left: -3px;
+  margin-right: 1px;
+}
+
+.chart-live-ok {
+  background: #f5a524;
+}
+
+.chart-live-hot {
+  background: #d83440;
+}
+
+/* Readouts */
+
+.readout {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.temperature {
+  font-size: 40px;
+}
+
+.fault {
+  font-size: 16px;
+  color: #ff4d4f;
+}
+
+.stats {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.stat {
+  width: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.stat-caption {
+  font-size: 10px;
+  color: #9aa0a6;
+  letter-spacing: 1px;
+}
+
+.stat-value {
+  font-size: 18px;
+}
+
+/* Buttons */
+
+.actions {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+.action {
+  flex: 1;
+  height: 40px;
+  border-radius: 6px;
+  background: #1c1c1c;
+  border: 1px solid #f2f2f2;
+  color: #f2f2f2;
+  font-size: 16px;
+  box-shadow: none;
+}
+
+.action:active {
+  background: #7b7b7b;
+}
+
+.action:disabled {
+  border-color: #3a3a3a;
+  color: #5a5a5a;
+}
+
+.action-start {
+  background: #12361f;
+  border-color: #3ccf6e;
+}
+
+.action-start:disabled {
+  background: #1c1c1c;
+  border-color: #3a3a3a;
+}
+
+.action-stop {
+  background: #4a1418;
+  border-color: #ff4d4f;
+}
+
+/* Profile picker */
+
+.title {
+  font-size: 20px;
+}
+
+.profile-list {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.profile-row {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  background: #1c1c1c;
+  border: 1px solid #3a3a3a;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.profile-row:active {
+  background: #7b7b7b;
+}
+
+.profile-row:checked {
+  border-color: #f5a524;
+}
+
+.profile-row-name {
+  font-size: 18px;
+}
+
+.profile-row-detail {
+  font-size: 12px;
+  color: #9aa0a6;
+}
+
+/* Splash */
+
+.splash {
+  width: 100%;
+  height: 100%;
+  padding: 24px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.splash-title {
+  margin-top: 80px;
+  font-size: 32px;
+}
+
+.splash-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.splash-brand {
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.splash-version {
+  font-size: 12px;
+  color: #9aa0a6;
+}
